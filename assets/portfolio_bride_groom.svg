@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portWeddingBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f06e30" />
+      <stop offset="50%" stop-color="#e84a5f" />
+      <stop offset="100%" stop-color="#2a0845" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#portWeddingBg)" />
+  
+  <!-- Massive confetti explosion -->
+  <g opacity="0.8">
+    <rect x="200" y="300" width="20" height="10" fill="#ffffff" transform="rotate(35 200 300)" />
+    <rect x="350" y="150" width="15" height="15" fill="#ffd700" transform="rotate(12 350 150)" />
+    <rect x="550" y="250" width="25" height="12" fill="#ffd700" transform="rotate(55 550 250)" />
+    <rect x="750" y="180" width="18" height="18" fill="#ffffff" transform="rotate(-25 750 180)" />
+    <rect x="900" y="320" width="15" height="30" fill="#f06e30" transform="rotate(40 900 320)" />
+    <rect x="150" y="500" width="22" height="11" fill="#ffd700" transform="rotate(-15 150 500)" />
+    <rect x="850" y="550" width="30" height="15" fill="#ffffff" transform="rotate(45 850 550)" />
+    <circle cx="480" cy="180" r="10" fill="#ffffff" />
+    <circle cx="720" cy="400" r="8" fill="#ffd700" />
+    <circle cx="310" cy="580" r="12" fill="#f06e30" />
+  </g>
+  
+  <!-- Zoom search icon in center -->
+  <circle cx="600" cy="400" r="60" fill="#ffffff" opacity="0.2" />
+  <circle cx="590" cy="390" r="30" fill="none" stroke="#ffffff" stroke-width="6" />
+  <line x1="611" y1="411" x2="640" y2="440" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Text info -->
+  <text x="600" y="100" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="44" fill="#ffffff" letter-spacing="4">MOMENTS OF JOY</text>
+  <text x="600" y="150" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="400" font-size="18" fill="#e2e8f0">Wedding Celebration Portfolio</text>
+  <text x="600" y="720" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#ffffff" opacity="0.7">REPLACE WITH HIGH RES WEDDING IMAGE (1200x800 px)</text>
+</svg>

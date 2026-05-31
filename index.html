@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayFactory 360 | Immersive 360° Photobooth Experiences</title>
+  <meta name="description" content="Capture the full energy of your celebration from every angle. PlayFactory 360 provides premium 360° photobooth rental experiences for weddings, corporate events, and parties.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       Header / Navigation
+       ========================================== -->
+  <header id="header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="assets/logo.png" alt="PlayFactory 360 Logo" class="logo-img">
+        PlayFactory<span>360</span>
+      </a>
+      
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Contact</a></li> <!-- Map contact to Contact section -->
+        </ul>
+      </nav>
+      
+      <div class="header-action">
+        <a href="#contact" class="btn btn-primary">Book Now</a>
+      </div>
+      
+      <button class="hamburger" id="hamburger-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <!-- High res uploaded hero background image -->
+      <img src="assets/hero_bg.jpg" alt="glowing circular 360 photobooth event space with guest posing">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1>Capturing Moments, <span>Creating Memories.</span></h1>
+        <p>Immersive 360° photo booth experiences that transform your events into unforgettable memories.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            Book Your Experience
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-to-next">
+      <div class="mouse-icon"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Stats Section
+       ========================================== -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        
+        <div class="stat-item reveal">
+          <div class="stat-icon">
+            <!-- Ribbon Badge Icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="500">0+</div>
+          <div class="stat-label">Events Captured</div>
+        </div>
+
+        <div class="stat-item reveal delay-1">
+          <div class="stat-icon">
+            <!-- Team People Icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="10000">0+</div>
+          <div class="stat-label">Happy Guests</div>
+        </div>
+
+        <div class="stat-item reveal delay-2">
+          <div class="stat-icon">
+            <!-- Camera Icon -->
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="99">0%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       About Section (Meet the Team)
+       ========================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="collage-container reveal-left">
+          <!-- Background Offset Image -->
+          <div class="collage-img collage-bg">
+            <img src="assets/team_confetti.jpg" alt="Guests celebrating with colorful glasses on 360 photo booth">
+          </div>
+          <!-- Foreground Offset Image -->
+          <div class="collage-img collage-fg">
+            <img src="assets/team_operating.jpg" alt="Professional PlayFactory 360 operators setting up the equipment">
+          </div>
+        </div>
+        
+        <div class="about-text reveal-right">
+          <span class="section-tag">About Us</span>
+          <h2>PLAYFACTORY<span>360</span></h2>
+          <p>360° photography is our greatest passion. Capturing the full energy of a celebration — every angle, every expression, every moment of joy — is what we live for. We pour our heart and soul into making your event unforgettable.</p>
+          <p>As your event photography partner, we will care deeply for you, your guests, and your vision — creating memories that last a lifetime.</p>
+          <a href="#services" class="btn btn-primary">
+            Learn More
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Featured Work / Services Section
+       ========================================== -->
+  <section id="services">
+    <div class="container">
+      <div class="services-grid">
+        
+        <div class="services-left reveal-left">
+          <span class="section-tag">Services</span>
+          <h2>Featured<br>Work</h2>
+          <p>From intimate celebrations to grand-scale events and many other events, we capture every moment with precision and passion. Browse our portfolio of unforgettable 360° experiences.</p>
+          
+          <div style="margin-top: 1.5rem;">
+            <a href="#portfolio" class="btn btn-outline-orange">
+              View All
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="carousel-nav">
+            <button class="carousel-arrow prev" id="slider-prev" aria-label="Previous Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-arrow next" id="slider-next" aria-label="Next Slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="services-right reveal-right">
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="slider-track">
+              
+              <!-- Card 1: Weddings -->
+              <div class="carousel-card">
+                <div class="carousel-card-img">
+                  <img src="assets/featured_wedding.jpg" alt="Weddings 360 booth experience">
+                  <div class="carousel-card-overlay"></div>
+                </div>
+                <div class="carousel-card-content">
+                  <h3>Weddings</h3>
+                  <p>Capture magical wedding spins surrounded by sparkling lights.</p>
+                </div>
+              </div>
+
+              <!-- Card 2: Birthdays -->
+              <div class="carousel-card">
+                <div class="carousel-card-img">
+                  <img src="assets/featured_birthday.jpg" alt="Birthdays 360 photobooth celebration">
+                  <div class="carousel-card-overlay"></div>
+                </div>
+                <div class="carousel-card-content">
+                  <h3>Birthdays</h3>
+                  <p>Elevate birthdays and milestone celebrations with high-energy 360 fun.</p>
+                </div>
+              </div>
+
+              <!-- Card 3: Corporate Events -->
+              <div class="carousel-card">
+                <div class="carousel-card-img">
+                  <img src="assets/featured_corporate.jpg" alt="Corporate Events 360 booth activations">
+                  <div class="carousel-card-overlay"></div>
+                </div>
+                <div class="carousel-card-content">
+                  <h3>Corporate Events</h3>
+                  <p>Professional brand activations and corporate galas that engage.</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Portfolio Section (Moments Captured)
+       ========================================= -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2>Moments We've <span>Captured</span></h2>
+        <p>Every event tells a story. Here are some of our favorites.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        
+        <!-- Large Bento Item 1 -->
+        <div class="portfolio-item large-bento reveal-left" data-video="assets/WhatsApp Video 2026-05-31 at 12.23.21 PM.mp4" data-caption="Glow Party Vibing &amp; Immersive 360° Photobooth Experience">
+          <video class="portfolio-video" autoplay muted loop playsinline src="assets/WhatsApp Video 2026-05-31 at 12.23.21 PM.mp4"></video>
+          <div class="portfolio-hover-overlay">
+            <div class="portfolio-zoom-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Bento Item 2 -->
+        <div class="portfolio-item standard-bento reveal-right" data-video="assets/WhatsApp Video 2026-05-31 at 12.23.25 PM.mp4" data-caption="Elegant Corporate Gala Brand Activation">
+          <video class="portfolio-video" autoplay muted loop playsinline src="assets/WhatsApp Video 2026-05-31 at 12.23.25 PM.mp4"></video>
+          <div class="portfolio-hover-overlay">
+            <div class="portfolio-zoom-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tall Bento Item 3 -->
+        <div class="portfolio-item tall-bento reveal" data-video="assets/WhatsApp Video 2026-05-31 at 12.23.26 PM.mp4" data-caption="Stunning Wedding Spin Moments">
+          <video class="portfolio-video" autoplay muted loop playsinline src="assets/WhatsApp Video 2026-05-31 at 12.23.26 PM.mp4"></video>
+          <div class="portfolio-hover-overlay">
+            <div class="portfolio-zoom-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Bento Item 4 -->
+        <div class="portfolio-item standard-bento reveal-left" data-video="assets/WhatsApp Video 2026-05-31 at 12.23.31 PM.mp4" data-caption="VIP Red Carpet Guest Engagements">
+          <video class="portfolio-video" autoplay muted loop playsinline src="assets/WhatsApp Video 2026-05-31 at 12.23.31 PM.mp4"></video>
+          <div class="portfolio-hover-overlay">
+            <div class="portfolio-zoom-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Bento Item 5 -->
+        <div class="portfolio-item standard-bento reveal-right" data-video="assets/WhatsApp Video 2026-05-31 at 12.23.32 PM.mp4" data-caption="Epic Birthday Celebration Spins">
+          <video class="portfolio-video" autoplay muted loop playsinline src="assets/WhatsApp Video 2026-05-31 at 12.23.32 PM.mp4"></video>
+          <div class="portfolio-hover-overlay">
+            <div class="portfolio-zoom-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Booking Inquiry / Contact Section
+       ========================================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info reveal-left">
+          <span class="section-tag">Booking</span>
+          <h2>Reserve Your<br>Date today.</h2>
+          <p>Tell us about your upcoming event. Let's create an unforgettable interactive media experience for your guests.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Call Us</h4>
+                <p>+1 (555) 360-PLAT</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Email Us</h4>
+                <p>hello@playfactory360.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Studio Location</h4>
+                <p>124 Celebration Blvd, Creative District</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-wrapper reveal-right">
+          <!-- Form Success Overlay -->
+          <div class="form-success-overlay" id="form-success">
+            <div class="success-icon-wrapper">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3>Request Received!</h3>
+            <p>Thank you. A PlayFactory 360 experience manager will check your date's availability and contact you shortly.</p>
+          </div>
+
+          <!-- Active form -->
+          <form id="booking-inquiry-form" action="#" method="POST">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="form-date">Event Date</label>
+                <input type="date" id="form-date" required>
+              </div>
+              <div class="form-group">
+                <label for="form-type">Event Type</label>
+                <select id="form-type" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding / Reception</option>
+                  <option value="corporate">Corporate Gala / Launch</option>
+                  <option value="party">Birthday / Anniversary</option>
+                  <option value="other">Other Celebration</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg">Inquiry Details</label>
+              <textarea id="form-msg" placeholder="Tell us about your guests, theme, or custom branding requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Check Date &amp; Availability
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Footer
+       ========================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <img src="assets/logo.png" alt="PlayFactory 360 Logo" class="logo-img">
+            PlayFactory<span>360</span>
+          </a>
+          <p>Capturing the full circular energy of your celebration. Premium 360° photo booth services.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Featured Work</a></li>
+            <li><a href="#contact">Bookings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Legals</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">F.A.Q.</a></li>
+            <li><a href="#">Rental Agreement</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PlayFactory 360. All rights reserved.</p>
+        <p>Crafted for premium event photography &amp; captures.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Lightbox Popup Modal
+       ========================================= -->
+  <div class="lightbox" id="portfolio-lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-content-wrapper">
+      <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img-element">
+      <video src="" class="lightbox-video" id="lightbox-video-element" autoplay controls playsinline></video>
+      <div class="lightbox-caption" id="lightbox-caption-element">Wedding Celebrations</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
