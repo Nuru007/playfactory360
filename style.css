@@ -234,7 +234,7 @@ header.sticky .logo-img {
   height: 4.8rem;
 }
 
-.logo span {
+.logo .logo-text span {
   color: var(--color-primary);
 }
 
