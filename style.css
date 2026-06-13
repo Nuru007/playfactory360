@@ -219,7 +219,7 @@ header .container {
 }
 
 .logo-img {
-  height: 6.8rem;
+  height: 9.5rem;
   width: auto;
   object-fit: contain;
   transition: var(--transition-smooth);
@@ -1352,7 +1352,7 @@ footer {
   }
   
   .logo-img {
-    height: 5.5rem;
+    height: 7.5rem;
   }
   
   .logo {
@@ -1529,7 +1529,7 @@ footer {
   }
   
   .logo-img {
-    height: 4.6rem;
+    height: 6.0rem;
   }
   
   .logo {
