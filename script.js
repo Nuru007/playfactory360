@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PlayFactory 360 Client Interaction Script
+   PlayFactory Photobooth Client Interaction Script
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const clone = card.cloneNode(true);
       sliderTrack.appendChild(clone);
     });
-    console.log("[PlayFactory 360 Marquee] Seamless loop cloned.");
+    console.log("[PlayFactory Photobooth Marquee] Seamless loop cloned.");
   }
 
   // ==========================================
