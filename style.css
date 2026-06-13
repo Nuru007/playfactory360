@@ -1062,6 +1062,15 @@ nav ul li a.active::after {
   font-size: 0.95rem;
 }
 
+.contact-detail-content p a {
+  transition: var(--transition-fast);
+}
+
+.contact-detail-content p a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 /* Booking Form */
 .booking-form-wrapper {
   background: rgba(17, 22, 34, 0.5);
