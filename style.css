@@ -993,14 +993,17 @@ nav ul li a.active::after {
   position: relative;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 6rem;
-  align-items: center;
+.contact-wrapper {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.contact-info .section-tag {
+.contact-header {
+  margin-bottom: 4rem;
+}
+
+.contact-header .section-tag {
   color: var(--color-primary);
   font-weight: 700;
   font-size: 0.85rem;
@@ -1010,59 +1013,90 @@ nav ul li a.active::after {
   display: block;
 }
 
-.contact-info h2 {
+.contact-header h2 {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 3.8rem;
   line-height: 1.1;
   letter-spacing: -1.5px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.contact-info p {
+.contact-header p {
   color: var(--color-text-muted-light);
-  font-size: 1.05rem;
-  margin-bottom: 3rem;
-  max-width: 450px;
+  font-size: 1.15rem;
+  margin: 0 auto;
+  max-width: 650px;
+  line-height: 1.6;
 }
 
-.contact-details {
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.contact-detail-card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  background: rgba(17, 22, 34, 0.45);
+  backdrop-filter: blur(16px);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-smooth);
 }
 
-.contact-detail-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
+.contact-detail-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(240, 110, 48, 0.35);
+  box-shadow: 0 25px 50px rgba(240, 110, 48, 0.15);
+  background: rgba(17, 22, 34, 0.65);
 }
 
 .contact-detail-icon {
   background-color: rgba(255, 255, 255, 0.05);
   color: var(--color-primary);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.02);
+  transition: var(--transition-smooth);
+}
+
+.contact-detail-card:hover .contact-detail-icon {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 10px 20px rgba(240, 110, 48, 0.3);
 }
 
 .contact-detail-content h4 {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
 }
 
 .contact-detail-content p {
   margin: 0;
   font-size: 0.95rem;
+  color: var(--color-text-muted-light);
+  line-height: 1.5;
 }
 
 .contact-detail-content p a {
+  color: inherit;
+  text-decoration: none;
   transition: var(--transition-fast);
 }
 
@@ -1071,135 +1105,21 @@ nav ul li a.active::after {
   text-decoration: underline;
 }
 
-/* Booking Form */
-.booking-form-wrapper {
-  background: rgba(17, 22, 34, 0.5);
-  backdrop-filter: blur(16px);
-  padding: 3.5rem;
-  border-radius: 20px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  position: relative;
-  overflow: hidden;
+@media (max-width: 991px) {
+  .contact-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
-.form-group-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.015);
-  backdrop-filter: blur(4px);
-  border: 1.5px solid rgba(255, 255, 255, 0.07);
-  border-radius: 6px;
-  padding: 0.95rem 1.25rem;
-  color: var(--color-white);
-  font-size: 0.95rem;
-  outline: none;
-  transition: var(--transition-fast);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--color-primary);
-  background-color: rgba(255, 255, 255, 0.035);
-  box-shadow: 0 0 20px rgba(240, 110, 48, 0.2);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 110px;
-}
-
-.form-group select {
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23ffffff' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1.2rem center;
-  background-size: 1.25rem;
-}
-
-.booking-form-wrapper .btn {
-  width: 100%;
-  justify-content: center;
-  padding: 1.1rem;
-  margin-top: 1rem;
-}
-
-/* Form Success Animation State */
-.form-success-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-dark-card);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-  z-index: 10;
-}
-
-.form-success-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.success-icon-wrapper {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background-color: var(--color-primary-light);
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  transform: scale(0.5);
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
-}
-
-.form-success-overlay.active .success-icon-wrapper {
-  transform: scale(1);
-}
-
-.form-success-overlay h3 {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-.form-success-overlay p {
-  color: var(--color-text-muted-light);
-  max-width: 320px;
-  font-size: 0.95rem;
+@media (max-width: 650px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .contact-header h2 {
+    font-size: 2.8rem;
+  }
 }
 
 /* ==========================================================================
@@ -1416,10 +1336,6 @@ footer {
     width: 300px;
   }
   
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-  }
 }
 
 @media (max-width: 768px) {

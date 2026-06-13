@@ -26,12 +26,12 @@
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#portfolio" class="nav-link">Contact</a></li> <!-- Map contact to Contact section -->
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
       
       <div class="header-action">
-        <a href="#contact" class="btn btn-primary">Book Now</a>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
       </div>
       
       <button class="hamburger" id="hamburger-toggle" aria-label="Toggle Navigation">
@@ -341,111 +341,54 @@
        ========================================= -->
   <section id="contact">
     <div class="container">
-      <div class="contact-grid">
-        
-        <div class="contact-info reveal-left">
+      <div class="contact-wrapper reveal">
+        <div class="contact-header">
           <span class="section-tag">Booking</span>
-          <h2>Reserve Your<br>Date today.</h2>
-          <p>Tell us about your upcoming event. Let's create an unforgettable interactive media experience for your guests.</p>
+          <h2>Reserve Your Date Today</h2>
+          <p>Let's create an unforgettable interactive media experience for your guests. Reach out to us directly through any of our channels below.</p>
+        </div>
+        
+        <div class="contact-details-grid">
           
-          <div class="contact-details">
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-              </div>
-              <div class="contact-detail-content">
-                <h4>Call Us</h4>
-                <p><a href="tel:08132517345">08132517345</a> or <a href="tel:08146942026">08146942026</a></p>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </div>
-              <div class="contact-detail-content">
-                <h4>Email Us</h4>
-                <p><a href="mailto:Playfactory360photobooth@gmail.com">Playfactory360photobooth@gmail.com</a></p>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="contact-detail-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-              </div>
-              <div class="contact-detail-content">
-                <h4>Studio Location</h4>
-                <p>Abuja, Nigeria</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="booking-form-wrapper reveal-right">
-          <!-- Form Success Overlay -->
-          <div class="form-success-overlay" id="form-success">
-            <div class="success-icon-wrapper">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
+          <div class="contact-detail-card">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
             </div>
-            <h3>Request Received!</h3>
-            <p>Thank you. A PlayFactory 360 experience manager will check your date's availability and contact you shortly.</p>
+            <div class="contact-detail-content">
+              <h4>Call Us</h4>
+              <p><a href="tel:08132517345">08132517345</a> or <a href="tel:08146942026">08146942026</a></p>
+            </div>
           </div>
 
-          <!-- Active form -->
-          <form id="booking-inquiry-form" action="#" method="POST">
-            <div class="form-group-row">
-              <div class="form-group">
-                <label for="form-name">Your Name</label>
-                <input type="text" id="form-name" placeholder="John Doe" required>
-              </div>
-              <div class="form-group">
-                <label for="form-email">Email Address</label>
-                <input type="email" id="form-email" placeholder="john@example.com" required>
-              </div>
-            </div>
-            
-            <div class="form-group-row">
-              <div class="form-group">
-                <label for="form-date">Event Date</label>
-                <input type="date" id="form-date" required>
-              </div>
-              <div class="form-group">
-                <label for="form-type">Event Type</label>
-                <select id="form-type" required>
-                  <option value="" disabled selected>Select event type</option>
-                  <option value="wedding">Wedding / Reception</option>
-                  <option value="corporate">Corporate Gala / Launch</option>
-                  <option value="party">Birthday / Anniversary</option>
-                  <option value="other">Other Celebration</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="form-msg">Inquiry Details</label>
-              <textarea id="form-msg" placeholder="Tell us about your guests, theme, or custom branding requirements..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">
-              Check Date &amp; Availability
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <div class="contact-detail-card">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-            </button>
-          </form>
-        </div>
+            </div>
+            <div class="contact-detail-content">
+              <h4>Email Us</h4>
+              <p><a href="mailto:Playfactory360photobooth@gmail.com">Playfactory360photobooth@gmail.com</a></p>
+            </div>
+          </div>
 
+          <div class="contact-detail-card">
+            <div class="contact-detail-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-detail-content">
+              <h4>Studio Location</h4>
+              <p>Abuja, Nigeria</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -482,7 +425,7 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Featured Work</a></li>
-            <li><a href="#contact">Bookings</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
